@@ -1,0 +1,14 @@
+{
+  "name": "taskflow-x",
+  "version": "1.0.0",
+  "description": "TaskFlow X — AI-Powered Productivity Platform",
+  "scripts": {
+    "dev:server": "cd server && node server.js",
+    "dev:client": "cd client && npx vite",
+    "dev": "start cmd /k \"cd server && node server.js\" && cd client && npx vite",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "license": "MIT"
+}
